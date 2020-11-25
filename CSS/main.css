@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,700&display=swap');
+html,body{
+    margin:0;
+    padding: 0;
+    overflow-x:hidden;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    background-color: #1B1A4F;
+    position: relative;
+    
+
+   
+}
+.navbar-toggler-icon{
+    color: white;
+}
+#navigation {
+    background-color: #1B1A4F;
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    color: #fff;
+    transition:all 0.5s ease;
+}
+#navigation a{ 
+    color: #fff;
+}
+#logo{
+    width: 2rem;
+}
+.main-bg{
+    padding: 5rem;
+    width:48rem;
+    height: 35rem;
+    margin-left: 2rem;
+}
+.description{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    background-image: linear-gradient(90deg,rgba(247, 244, 244, 0.473),rgba(0, 0, 0, 0.486) );
+}
+
+.description h2 {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    color:#fff;
+    top:20%;
+    right: 10%;
+    line-height: 60px;
+    letter-spacing: 3px;
+}
+
+.description span {
+padding-top: 10px;
+} 
+
+.description a {
+    text-decoration: none;
+    border: 1.5px solid #fff;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #000;
+    transition: 0.3s;
+}
+
+.description a:hover{
+    background: transparent;
+    color: #fff;
+}
+.sec2-content{
+width: 80%;
+height: auto;
+background-image: linear-gradient(90deg, #8cf5f0 50%, #fff 50%);
+box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.13);
+border-radius: 20px;
+padding: 20px;
+
+}
+
+.sec2-content label{
+    margin-right: 20px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.meals{
+    position: relative;
+    
+}
+.meals label{
+    position: absolute;
+    left: 20%;
+}
+.meal-selection{
+margin-top: 5px;
+position: absolute;
+left: 10%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#peopleCount{
+    position: absolute;
+    left: 10%;
+ width: 150px;   
+ outline: none;
+border: none;
+background-color: transparent;
+border-bottom: 2px solid #1B1A4F ;
+transition: 0.4s;
+-moz-appearance: textfield;
+}
+#peopleCount:focus{
+    width: 200px;
+}
+
+#Submit{
+    border: none ;
+    outline: none ;
+    background-color: #1B1A4F;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+
+}
+
+#Submit:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width:1240px){
+    
+    .main-bg{
+        opacity: 0.4;
+    }
+    .description{
+        background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.473),rgba(0, 0, 0, 0.486) );
+    }
+    
+    .description h2 {
+        width: 60%;
+        height: auto;
+        
+    }
+
+}
+
+@media only screen and (max-width:768px){
+    .sec2-content{
+        background-image: linear-gradient(90deg, #8cf5f0 50%, #8cf5f0 50%);
+        
+        }
+}
+
+@media only screen and (max-width:550px){
+    .description h2{
+       font-size: 21px;
+       line-height:40px;
+    }
+}
+
+@media only screen and (max-width:360px){
+   
+    .description h2{
+        top: 26%;
+       font-size: 15px;
+       line-height:35px;
+    }
+
+    .description a {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
